@@ -6,32 +6,32 @@ const Hero = () => {
   const navigate = useNavigate();
   
   // State to manage user input and chatbot response
-  const [userInput, setUserInput] = useState("");
-  const [chatbotResponse, setChatbotResponse] = useState("");
+  // const [userInput, setUserInput] = useState("");
+  // const [chatbotResponse, setChatbotResponse] = useState("");
 
-  // Function to get chatbot response
-  const getChatbotResponse = async () => {
-    if (!userInput) {
-      setChatbotResponse("Please enter a query.");
-      return;
-    }
+  // // Function to get chatbot response
+  // const getChatbotResponse = async () => {
+  //   if (!userInput) {
+  //     setChatbotResponse("Please enter a query.");
+  //     return;
+  //   }
 
-    try {
-      // Send POST request to FastAPI backend
-      const response = await fetch("http://127.0.0.1:8005/generate_remedy/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ user_input: userInput }), // Send user input as JSON
-      });
+  //   try {
+  //     // Send POST request to FastAPI backend
+  //     const response = await fetch("http://127.0.0.1:8005/generate_remedy/", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ user_input: userInput }), // Send user input as JSON
+  //     });
 
-      const data = await response.json();
-      setChatbotResponse(`Remedy: ${data.remedy}`);
-    } catch (error) {
-      setChatbotResponse("There was an error fetching the response.");
-    }
-  };
+  //     const data = await response.json();
+  //     setChatbotResponse(`Remedy: ${data.remedy}`);
+  //   } catch (error) {
+  //     setChatbotResponse("There was an error fetching the response.");
+  //   }
+  // };
 
   return (
     <div
@@ -55,9 +55,9 @@ const Hero = () => {
         </button>
 
         {/* Chatbot Section */}
-        <div className="mt-8 p-4 bg-gray-100 rounded-lg shadow-lg w-full max-w-lg">
-          <h2 className="text-xl font-semibold mb-2">Ask the Chatbot</h2>
-          <input
+        {/* <div className="mt-8 p-4 bg-gray-100 rounded-lg shadow-lg w-full max-w-lg"> */}
+          {/* <h2 className="text-xl font-semibold mb-2">Ask the Chatbot</h2> */}
+          {/* <input
             type="text"
             value={userInput}
             onChange={(e) => setUserInput(e.target.value)}
@@ -75,7 +75,7 @@ const Hero = () => {
           >
             {chatbotResponse}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
