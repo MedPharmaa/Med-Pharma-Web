@@ -1,5 +1,5 @@
-# Medofin
-_Introducing Medofin, revolutionizing healthcare!_ 
+# Medpharma
+_Introducing Medpharma, revolutionizing healthcare!_ 
 
 At HealthSaathi, we're on a mission to make healthcare seamless. Our cutting-edge application is your one-stop solution for paperless health records, hassle-free health insurance, and convenient online doctor appointments. 
 
