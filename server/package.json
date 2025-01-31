@@ -1,7 +1,7 @@
 {
-  "name": "medofin_backend",
+  "name": "Medpharma_backend",
   "version": "1.0.0",
-  "description": "backend for medofin ",
+  "description": "backend for Medpharma ",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -10,9 +10,9 @@
   "keywords": [
     "javascript",
     "backend",
-    "medofin"
+    "Medpharma"
   ],
-  "author": "Medofin",
+  "author": "Medpharma",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.2",

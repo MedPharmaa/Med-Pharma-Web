@@ -14,15 +14,15 @@ const bookLabTest = async (req, res) => {
         price_data: {
           currency: 'inr',
           product_data: {
-            name: 'Medofin',
+            name: 'Medpharma',
           },
           unit_amount: 9900,
         },
         quantity: 1,
       },
     ],
-    success_url: 'https://medofin.com/',
-    cancel_url: 'https://medofin.com/error',
+    success_url: 'https://Medpharma.com/',
+    cancel_url: 'https://Medpharma.com/error',
   })
 
   const { username, testName , userEmail } = req.body
