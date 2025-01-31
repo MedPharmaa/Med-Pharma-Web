@@ -11,7 +11,7 @@ import {
   MenuItem,
   Select,
   Box,
-} from "@material-ui/core";
+} from "@mui/material";
 
 const Form = () => {
   const [btn, setBtn] = useState(false);
